@@ -7,7 +7,7 @@ export default function App() {
   const [leitura, setLeitura] = useState({x: 0, y:0, z:0});
   useEffect(() => {
     //define quantos milissegundos entre cada leitura
-    //100 ms = 10 leitura por segundo
+    //100 ms = 10 leitura por segundos
     Accelerometer.setUpdateInterval(100);
 
     const inscricao = Accelerometer.addListener(setLeitura);
